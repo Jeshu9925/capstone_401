@@ -1,0 +1,11 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+}
+.card-title {
+  color: #d63384;
+}
+.card-footer {
+  text-align: right;
+  background: #f1f1f1;
+}
