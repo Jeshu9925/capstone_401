@@ -7,7 +7,7 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 
 const serviceAccount = JSON.parse(
-  Buffer.from(process.env.SERVICE_ACCOUNT_KEY, 'base64').toString('utf-8')
+  Buffer.from(process.env.SERVICE_ACCOUNT_KEY_B64, 'base64').toString('utf-8')
 );
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
