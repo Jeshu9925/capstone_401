@@ -7,7 +7,9 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 
 const serviceAccount = JSON.parse(
-  fs.readFileSync('./serviceAccountKey.json', 'utf8'));
+  Buffer.from(process.env.SERVICE_ACCOUNT_KEY, 'base64').toString('utf-8')
+);
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
